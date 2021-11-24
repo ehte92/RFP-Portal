@@ -134,7 +134,7 @@ function Form() {
       data.append("files", files[i]);
     }
 
-    const url = process.env.API_URL + "/sendemail";
+    const url = "http://3f61-94-206-195-27.ngrok.io/sendemail";
     const config = {
       headers: {
         "Content-Type": "application/json",
