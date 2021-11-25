@@ -100,7 +100,6 @@ function Form() {
   });
 
   const handleSubmit = () => {
-    console.log("Handle Submit Triggered");
     setLoading(true);
     setError(null);
     const id = notifications.showNotification({
@@ -130,11 +129,12 @@ function Form() {
     data.append("presentationTypeOthers", form.values.presentationTypeOthers);
     data.append("sow", form.values.sow);
     data.append("referenceLinks", form.values.referenceLinks);
+    console.log("🚀 ~ file: Form.js ~ line 132 ~ handleSubmit ~ form.values.referenceLinks", form.values.referenceLinks)
     for (let i = 0; i < files.length; i++) {
       data.append("files", files[i]);
     }
 
-    const url = process.env.API_URL + "/sendemail";
+    const url = process.env.NEXT_PUBLIC_API_URL;
     const config = {
       headers: {
         "Content-Type": "application/json",
