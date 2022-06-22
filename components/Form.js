@@ -194,8 +194,8 @@ function Form() {
               Request for Proposal
             </Text>
             <Text size="xs" align="center">
-              Incase of emergencies please contact 00971527590498 or
-              aditya.r@takeleap.com
+              Incase of emergencies please contact 00971553327278 or
+              syed.s@takeleap.com
             </Text>
           </Group>
           <Divider />
@@ -209,10 +209,9 @@ function Form() {
                 placeholder="Select Account Manager"
                 data={[
                   "Sophiya",
-                  "Ziad",
-                  "Christine",
+                  "Farooque",
+                  "Ahmed",
                   "Sharme",
-                  "Aditya",
                   "Other",
                 ]}
                 onChange={(event) =>
