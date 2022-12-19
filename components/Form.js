@@ -129,7 +129,6 @@ function Form() {
     data.append("presentationTypeOthers", form.values.presentationTypeOthers);
     data.append("sow", form.values.sow);
     data.append("referenceLinks", form.values.referenceLinks);
-    console.log("🚀 ~ file: Form.js ~ line 132 ~ handleSubmit ~ form.values.referenceLinks", form.values.referenceLinks)
     for (let i = 0; i < files.length; i++) {
       data.append("files", files[i]);
     }
@@ -207,13 +206,7 @@ function Form() {
                 label="Account Manager"
                 required
                 placeholder="Select Account Manager"
-                data={[
-                  "Sophiya",
-                  "Farooque",
-                  "Ahmed",
-                  "Sharme",
-                  "Other",
-                ]}
+                data={["Sophiya", "Farooque", "Ahmed", "Sharme", "Other"]}
                 onChange={(event) =>
                   form.setFieldValue("accountManager", event)
                 }
