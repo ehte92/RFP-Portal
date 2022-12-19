@@ -147,7 +147,7 @@ function Form() {
           id,
           color: "teal",
           title: "Form Submitted",
-          message: "Your form has been submitted successfully",
+          message: "Your form has been submitted successfully!!",
           icon: <FiCheckCircle />,
           autoClose: true,
           disallowClose: false,
